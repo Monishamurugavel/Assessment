@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Creation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="assessment-container">
+        <h2>Create New Assessment</h2>
+        <form id="assessmentForm">
+            <label for="questionType">Question Type:</label>
+            <select id="questionType" name="questionType" required>
+                <option value="multipleChoice">Multiple Choice</option>
+                <option value="shortAnswer">Short Answer</option>
+                <option value="codingChallenge">Coding Challenge</option>
+            </select>
+
+            <label for="questionText">Question:</label>
+            <textarea id="questionText" name="questionText" rows="4" required></textarea>
+
+            <div id="multipleChoiceOptions" class="question-type-section">
+                <label>Options:</label>
+                <input type="text" name="option1" placeholder="Option 1" required>
+                <input type="text" name="option2" placeholder="Option 2" required>
+                <input type="text" name="option3" placeholder="Option 3" required>
+                <input type="text" name="option4" placeholder="Option 4" required>
+
+                <label for="correctOption">Correct Option:</label>
+                <select id="correctOption" name="correctOption" required>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+
+            <div id="shortAnswerSection" class="question-type-section" style="display: none;">
+                <label for="correctAnswer">Correct Answer:</label>
+                <input type="text" id="correctAnswer" name="correctAnswer" required>
+            </div>
+
+            <div id="codingChallengeSection" class="question-type-section" style="display: none;">
+                <label for="codingInstructions">Coding Instructions:</label>
+                <textarea id="codingInstructions" name="codingInstructions" rows="4" required></textarea>
+
+                <label for="exampleSolution">Example Solution:</label>
+                <textarea id="exampleSolution" name="exampleSolution" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Save/Upload</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

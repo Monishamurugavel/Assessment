@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educator Platform - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+        </form>
+    </div>
+
+    <div id="dashboard" class="dashboard-container" style="display: none;">
+        <h2>Educator Dashboard</h2>
+        <div class="dashboard-section">
+            <h3>Ongoing Assessments</h3>
+            <!-- Placeholder content -->
+            <p>No ongoing assessments.</p>
+        </div>
+        <div class="dashboard-section">
+            <h3>Recent Activity</h3>
+            <!-- Placeholder content -->
+            <p>No recent activity.</p>
+        </div>
+        <div class="dashboard-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Create Assessment</a></li>
+                <li><a href="#">View Reports</a></li>
+                <li><a href="#">Manage Students</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
